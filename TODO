@@ -1,0 +1,8 @@
+List of to do items
+
+Create a WebAPI - DONE
+Create a docker container to run the WebAPI - DONE
+Create a docker compose file with sql as well as WebAPI
+
+Learn dependency Injection
+Learn how to layout code (Clean Arch)
