@@ -1,0 +1,15 @@
+version: '3'
+services: 
+    ms-sql-server:
+        image: mcr.microsoft.com/mssql/server:2019-latest
+        environment: 
+            ACCEPT_EULA: "Y"
+            SA_PASSWORD: "Password1234"
+            MSSQL_PID: Express
+        ports: 
+          - "1433:1433"
+    pocwebapi: 
+        image: nashsing7/pocwebapi
+        build: .
+        ports:
+          - "8080:80"
